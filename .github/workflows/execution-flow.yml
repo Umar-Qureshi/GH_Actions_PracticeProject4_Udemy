@@ -17,7 +17,7 @@ jobs:
           key: deps-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         # Install dependencies only if cache is not hit
-        # This is to avoid running npm ci if the cache is already present
+        # This is to avoid running npm ci if the cache is already presentt
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Lint code
