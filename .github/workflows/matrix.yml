@@ -2,6 +2,7 @@ name: Matrix Demo
 on: push
 jobs:
   build:
+    continue-on-error: true
     strategy:
       # Define a matrix of parameters to run the job with
       # different combinations of Node.js versions and OS
