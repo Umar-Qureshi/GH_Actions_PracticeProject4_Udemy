@@ -6,7 +6,7 @@ jobs:
       # Define a matrix of parameters to run the job with
       # different combinations of Node.js versions and OS
       matrix:
-        node-version: [16, 18, 20]
+        node-version: [12, 14, 16]
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
